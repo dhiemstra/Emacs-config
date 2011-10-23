@@ -1,7 +1,7 @@
 ;; Includes
 (load "~/Emacs/rc/paths")
 (load "~/Emacs/rc/frames")
-(load "~/Emacs/rc/key-bindings")
 (load "~/Emacs/rc/colors")
 (load "~/Emacs/rc/ido")
 (load "~/Emacs/rc/settings")
+(load "~/Emacs/rc/key-bindings")

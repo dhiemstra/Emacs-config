@@ -28,4 +28,6 @@
      (setq viper-insert-state-id "<Insert>")
      (setq viper-replace-state-id "<Replace>")))
 
+(global-set-key "\M-gs" 'magit-status)
+
 (windmove-default-keybindings)

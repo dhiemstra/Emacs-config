@@ -9,9 +9,13 @@
 (fset 'yes-or-no-p 'y-or-n-p)       ; replace y-e-s by y
 (global-linum-mode 1)               ; enable line numbers
 
+;; emacs git integration
+(add-to-list 'load-path "~/Emacs/include/magit")
+(require 'magit)
+
 ;; "wrap" long lines
-(setq-default truncate-lines nil)
-(setq-default truncate-partial-width-windows nil)
+(setq-default truncate-lines 0)
+(setq-default truncate-partial-width-windows 0)
 
 ;; scrolling
 (setq scroll-step 1)

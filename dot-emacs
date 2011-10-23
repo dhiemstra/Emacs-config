@@ -5,6 +5,10 @@
 (load "~/Emacs/rc/colors")
 (load "~/Emacs/rc/ido")
 
+;; Git integration
+(add-to-list 'load-path "~/Emacs/include/magit")
+(require 'magit)
+
 ;; Basic settings
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on) ;; Shell mode colors
 (setq make-backup-files         nil)                       ;; Don't create backup files

@@ -7,6 +7,7 @@
 (setq-default indent-tabs-mode nil) ; spaces when indenting code
 (setq inhibit-startup-message t)    ; no splash screen
 (fset 'yes-or-no-p 'y-or-n-p)       ; replace y-e-s by y
+(global-linum-mode 1)               ; enable line numbers
 
 ;; "wrap" long lines
 (setq-default truncate-lines nil)

@@ -1,6 +1,7 @@
 ;; Basic settings
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on) ;; Shell mode colors
 (setq make-backup-files         nil)                       ;; Don't create backup files
+(auto-save-mode -1)
 
 (global-font-lock-mode 1)
 (setq transient-mark-mode t)        ; highlight text selection
@@ -23,7 +24,6 @@
 (put 'downcase-region 'disabled nil)
 (setq require-final-newline 1)      ; ask if final newline should be added
 
-;; Auto indenting
-(defun set-newline-and-indent ()
-  (local-set-key (kbd "RET") 'newline-and-indent))
-(add-hook 'c-mode 'set-newline-and-indent)
+;; yaml mode
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))

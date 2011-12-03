@@ -14,6 +14,10 @@
 (add-to-list 'load-path "~/Emacs/include/magit")
 (require 'magit)
 
+(add-to-list 'load-path "~/Emacs/include/textmate")
+(require 'textmate)
+(textmate-mode)
+
 ;; "wrap" long lines
 (setq-default truncate-lines 0)
 (setq-default truncate-partial-width-windows 0)

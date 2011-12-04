@@ -2,6 +2,7 @@
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on) ;; Shell mode colors
 (setq make-backup-files         nil)                       ;; Don't create backup files
 (auto-save-mode -1)
+(setq auto-save-default nil)
 
 (global-font-lock-mode 1)
 (setq transient-mark-mode t)        ; highlight text selection

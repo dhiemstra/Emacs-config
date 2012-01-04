@@ -1,3 +1,7 @@
+;; Start server
+(if (eq (server-running-p server-name) nil)
+      (server-start))
+
 ;; Basic settings
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on) ;; Shell mode colors
 (setq make-backup-files         nil)                       ;; Don't create backup files

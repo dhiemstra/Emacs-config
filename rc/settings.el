@@ -15,12 +15,9 @@
 (fset 'yes-or-no-p 'y-or-n-p)       ; replace y-e-s by y
 (global-linum-mode 1)               ; enable line numbers
 
-
 ;; turn off the toolbar, scrollbar, fringe; keep the tab bar
-(when *aquamacs-p*
-  (tabbar-mode 1))
+(tabbar-mode -1)
 (tool-bar-mode -1)
-(fringe-mode -1)
 (scroll-bar-mode -1)
 
 ;; emacs git integration

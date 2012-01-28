@@ -1,6 +1,5 @@
 ;; Start server
-(if (eq (server-running-p server-name) nil)
-      (server-start))
+(server-start)
 
 ;; Basic settings
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on) ;; Shell mode colors
@@ -16,7 +15,7 @@
 (global-linum-mode 1)               ; enable line numbers
 
 ;; turn off the toolbar, scrollbar, fringe; keep the tab bar
-(tabbar-mode -1)
+;; (tabbar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 

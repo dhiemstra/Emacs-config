@@ -7,4 +7,3 @@
 (load "~/Emacs/rc/key-bindings")
 (load "~/Emacs/rc/ruby")
 (load "~/Emacs/rc/coffee")
-(load "~/Emacs/rc/scss")

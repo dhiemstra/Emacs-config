@@ -5,6 +5,7 @@
 (load "~/Emacs/rc/ido")
 (load "~/Emacs/rc/settings")
 (load "~/Emacs/rc/key-bindings")
+(load "~/Emacs/rc/whitespace")
 (load "~/Emacs/rc/ruby")
 (load "~/Emacs/rc/coffee")
 (load "~/Emacs/rc/scss")

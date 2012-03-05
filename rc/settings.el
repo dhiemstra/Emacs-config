@@ -3,7 +3,7 @@
 
 ;; Basic settings
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on) ;; Shell mode colors
-(setq make-backup-files         nil)                       ;; Don't create backup files
+(setq make-backup-files nil)
 (auto-save-mode -1)
 (setq auto-save-default nil)
 
@@ -40,6 +40,10 @@
 ;; yaml mode
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+;; haml mode
+(require 'haml-mode)
+(add-to-list 'auto-mode-alist '("\\.haml" . haml-mode))
 
 ;; css
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))

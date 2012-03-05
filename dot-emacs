@@ -9,3 +9,4 @@
 (load "~/Emacs/rc/ruby")
 (load "~/Emacs/rc/coffee")
 (load "~/Emacs/rc/scss")
+(load "~/Emacs/rc/erlang")

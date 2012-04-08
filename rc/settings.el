@@ -14,6 +14,13 @@
 (fset 'yes-or-no-p 'y-or-n-p)       ; replace y-e-s by y
 (global-linum-mode 1)               ; enable line numbers
 
+;; Load viper mode
+(defun init-viper ()
+  (setq viper-mode t)
+  (require 'viper))
+
+(add-hook 'emacs-startup-hook 'init-viper)
+
 ;; turn off the toolbar, scrollbar, fringe; keep the tab bar
 ;; (tabbar-mode -1)
 (tool-bar-mode -1)

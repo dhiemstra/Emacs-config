@@ -3,13 +3,6 @@
   (interactive)
   (error (substitute-command-keys "To exit emacs: \\[kill-emacs]")))
 
-;; Load viper mode
-(defun init-viper ()
-  (setq viper-mode t)
-  (require 'viper))
-
-(add-hook 'emacs-startup-hook 'init-viper)
-
 (global-set-key "\C-x\C-c" 'dont-kill-emacs)
 
 (setq woman-use-own-frame nil)     ; don't create new frame for manpages

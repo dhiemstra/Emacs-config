@@ -3,20 +3,22 @@
   (interactive)
   (error (substitute-command-keys "To exit emacs: \\[kill-emacs]")))
 
+;; Load viper mode
+(defun init-viper ()
+  (setq viper-mode t)
+  (require 'viper))
+
+(add-hook 'emacs-startup-hook 'init-viper)
+
 (global-set-key "\C-x\C-c" 'dont-kill-emacs)
 
-;; Viper
-(when (featurep 'aquamacs)
-   (raise-frame))
-(setq viper-mode t)
-(require 'viper)
 (setq woman-use-own-frame nil)     ; don't create new frame for manpages
 (setq woman-use-topic-at-point t)  ; don't prompt upon K key (manpage display)
 
 (global-set-key "\C-x\C-b" 'bs-show) ; buffer-list
 (global-set-key "\C-cg" 'goto-line)
-(global-set-key [f5] 'viper-change-state-to-vi)
-(global-set-key [f6] 'viper-change-state-to-emacs)
+;; (global-set-key [f5] 'viper-change-state-to-vi)
+;; (global-set-key [f6] 'viper-change-state-to-emacs)
 (global-set-key [?\C--] 'zoom-frm-out)
 (global-set-key [?\C-=] 'zoom-frm-in)	 ;
 (global-set-key [?\C-0] 'zoom-frm-unzoom) ;

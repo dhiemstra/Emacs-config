@@ -22,3 +22,4 @@
                                            nil 
 					 'fullboth))) 
 
+(add-hook 'emacs-startup-hook 'toggle-fullscreen)

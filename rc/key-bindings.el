@@ -24,5 +24,17 @@
      (setq viper-replace-state-id "<Replace>")))
 
 (global-set-key "\M-gs" 'magit-status)
+(global-set-key "\M-t" 'helm-mini)
 
 (windmove-default-keybindings)
+
+(defvar *personal-mode-map*
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "A-t") 'helm-mini)
+    map))
+
+(define-minor-mode personal-mode
+  "This minor mode contains my personal settings"
+  :lighter " pers" :global t :keymap *personal-mode-map*)
+
+(personal-mode)

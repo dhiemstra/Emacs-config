@@ -34,6 +34,10 @@
 (require 'textmate)
 (textmate-mode)
 
+;; helm
+(add-to-list 'load-path "~/Emacs/include/helm")
+(require 'helm-config)
+
 ;; "wrap" long lines
 (setq-default truncate-lines 0)
 (setq-default truncate-partial-width-windows 0)

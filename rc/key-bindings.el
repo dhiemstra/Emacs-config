@@ -30,7 +30,8 @@
 
 (defvar *personal-mode-map*
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "A-t") 'helm-mini)
+;;    (define-key map (kbd "A-t") 'helm-mini)
+    (define-key map (kbd "A-t") 'helm-project-files-find)
     map))
 
 (define-minor-mode personal-mode

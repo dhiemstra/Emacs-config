@@ -37,6 +37,14 @@
 ;; helm
 (add-to-list 'load-path "~/Emacs/include/helm")
 (require 'helm-config)
+(require 'helm-match-plugin)
+(require 'helm-buffers)
+(require 'helm-files)
+(require 'helm-project-files)
+
+(defun helm-current-dir ()
+  (interactive)
+  (helm '(helm-c-source-files-in-current-dir)))
 
 ;; "wrap" long lines
 (setq-default truncate-lines 0)

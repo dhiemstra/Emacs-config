@@ -13,6 +13,17 @@
 (setq inhibit-startup-message t)    ; no splash screen
 (fset 'yes-or-no-p 'y-or-n-p)       ; replace y-e-s by y
 (global-linum-mode 1)               ; enable line numbers
+(tabbar-mode -1)
+
+;; Fonts
+(defun fontify-frame (frame)
+  (set-frame-parameter frame 'font "Inconsolata-14"))
+
+;; Fontify current frame
+(fontify-frame nil)
+
+;; Fontify any future frames
+(push 'fontify-frame after-make-frame-functions)
 
 ;; Load viper mode
 (defun init-viper ()

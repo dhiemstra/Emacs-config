@@ -78,3 +78,10 @@
 ;; css
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
 (add-to-list 'auto-mode-alist '("\\.scss\\.erb$" . css-mode))
+(setq css-indent-offset 2)
+
+;; coffee
+(require 'coffee-mode)
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+(setq coffee-tab-width 2)
